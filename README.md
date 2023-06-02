@@ -1,40 +1,11 @@
-Below are the steps to get your plugin running. You can also find instructions at:
+Mondrian Grid Generator is a Figma plugin designed to facilitate the creation of Mondrian-style geometric patterns.
 
-  https://www.figma.com/plugin-docs/plugin-quickstart/
+It offers a set of controls for users to specify parameters such as grid levels, stroke thickness, and the ratio of cell division, enabling a wide range of design possibilities. The plugin produces a randomized, unique output within the user-specified constraints. It's particularly useful for designers seeking to quickly generate abstract, geometrically-structured artwork or backgrounds, in line with Mondrian's distinctive style, directly within their Figma projects.
 
-This plugin template uses Typescript and NPM, two standard tools in creating JavaScript applications.
+<h2>How to Use</h2>
 
-First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
-libraries. You can find the download link here:
+To use the plugin, select a frame and set the parameters. Increasing the levels parameter increases the number of cells in the grid. Stroke controls the thickness of the stroke and the split ratio slider lets you define how even you want the randomized cell division to occur.
 
-  https://nodejs.org/en/download/
+Choosing a levels value of 2 can create distinct grids to use in presentation slides.
 
-Next, install TypeScript using the command:
-
-  npm install -g typescript
-
-Finally, in the directory of your plugin, get the latest type definitions for the plugin API by running:
-
-  npm install --save-dev @figma/plugin-typings
-
-If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
-is already valid Typescript code.
-
-TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
-
-For more information, visit https://www.typescriptlang.org/
-
-Using TypeScript requires a compiler to convert TypeScript (code.ts) into JavaScript (code.js)
-for the browser to run.
-
-We recommend writing TypeScript code using Visual Studio code:
-
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-    then select "npm: watch". You will have to do this again every time
-    you reopen Visual Studio Code.
-
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
+<b>NOTE: Select an empty frame to run the plugin as it will remove all children objects present in the frame<b>
