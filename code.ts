@@ -32,6 +32,9 @@ function createMondrianGrid(frame: FrameNode, strokeWidth: number, depth: number
   if(strokeWidth > 0){
     frame.strokeWeight = strokeWidth * 2;
   }
+  else {
+    frame.strokeWeight = 0;
+  }
   figma.ui.postMessage({ type: 'grid-complete' });
 }
 

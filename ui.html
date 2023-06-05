@@ -190,7 +190,7 @@ input[type=range]::-webkit-slider-thumb:active {
     <script>
       const button = document.getElementById('create-grid');
       button.onclick = () => {
-        const depth = Number(document.getElementById('depth').value);
+        const depth = Math.min(Number(document.getElementById('depth').value), 10);
         const stroke = Number(document.getElementById('stroke').value);
         const split = Number(document.getElementById('split').value);
         parent.postMessage({ pluginMessage: { type: 'create-mondrian-grid', depth, stroke, split } }, '*');
